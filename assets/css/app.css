@@ -1,0 +1,20 @@
+/*Login Layout*/
+#login-thumb{
+    height: 250px;
+}
+#login-screen{
+    background-color: #fff9ed;
+}
+.auth-box{
+    background-color: #ffe5aa;
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.custom-btn{
+    background-color: #e50055;
+}
+.custom-btn:hover{
+    background-color: ;
+}
