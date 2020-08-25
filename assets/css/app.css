@@ -1,9 +1,24 @@
 /*Login Layout*/
 #login-thumb{
-    height: 250px;
+    height: 230px;
 }
 #login-screen{
     background-color: #fff9ed;
+}
+.auth-header{
+    margin-bottom: 20px;
+}
+.custom-form-header{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 29px;
+    letter-spacing: 0.2px;
+    word-spacing: -3.4px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
 }
 .auth-box{
     background-color: #ffe5aa;
@@ -13,10 +28,54 @@
     margin-bottom: 5%;
     box-shadow: 0 0 10px #e1e5d4, 0 0 20px black, 0 0 10px #E50055;
 }
-.custom-btn{
-    background-color: #e50055;
+#custom-button{
+    width: 130px;
+    color: #fff;
+    margin:10px ;
+}
+#custom-button:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #ec3345;
+    box-shadow: 0 0 10px white, 0 0 10px #E50055, 0 0 20px #E50055;
+    font-weight: bold;
+}
+.error-message{
+    font-size: 80%;
+    color: #dc3545;
+    display: none;
+}
+.error-input{
+    border-color: #dc3545;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.correct-input{
+    border-color: #28a745;;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 /*
 .custom-btn:hover{
+border-color: #dc3545
     background-color: ;
 }*/
