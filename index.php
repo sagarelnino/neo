@@ -14,7 +14,7 @@
 	<!-- Latest compiled JavaScript -->
     <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body id="login-screen">
+<body>
 	<div class="container-fluid">
 			<div class="offset-md-4 col-md-4">
                 <img class="img-fluid mx-auto d-block" id="login-thumb" src="assets/images/NEO_logo.png">

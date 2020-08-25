@@ -8,13 +8,15 @@
 .auth-box{
     background-color: #ffe5aa;
     border-radius: 10px;
-    padding: 5%;
+    padding: 7%;
     margin-top: 5%;
     margin-bottom: 5%;
+    box-shadow: 0 0 10px #E50055, 0 0 20px black, 0 0 10px #E50055;
 }
 .custom-btn{
     background-color: #e50055;
 }
+/*
 .custom-btn:hover{
     background-color: ;
-}
+}*/
