@@ -9,7 +9,7 @@ class Application extends Database
         return $data;
     }
     public function getUserByUsername($username){
-        $st = $this->conn->prepare('SELECT * FROM m_user WHERE USERNAME=:username');
+        $st = $this->conn->prepare('SELECT * FROM M_USER WHERE USERNAME=:username');
         $st->bindParam(':username',$username);
         $st->execute();
         $resultSet = $st->fetch(PDO::FETCH_OBJ);

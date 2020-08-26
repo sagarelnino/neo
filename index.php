@@ -8,24 +8,24 @@ if(isset($_POST['submit'])){
     if($userInfo){
         if(password_verify($password,$userInfo->PASSWORD)){
             $_SESSION['user_id'] = $userInfo->id;
-            if($userInfo->role_id == 1){
+            if($userInfo->ROLE_ID == 1){
                 $_SESSION['message'] = array(
                     'type' => 'success',
                     'text' => 'Welcome Admin'
                 );
                 /*header('location: admin_dashboard.php');*/
-            }elseif ($userInfo->role_id == 2){
+            }elseif ($userInfo->ROLE_ID == 2){
                 $_SESSION['message'] = array(
                     'type' => 'success',
                     'text' => 'Welcome Teacher'
                 );
                 /*header('location: teacher_dashboard.php');*/
-            }elseif ($userInfo->role_id == 3){
+            }elseif ($userInfo->ROLE_ID == 3){
                 $_SESSION['message'] = array(
                     'type' => 'success',
                     'text' => 'Welcome Student'
                 );
-                /*header('location: student_dashboard.php');*/
+                header('location: student_dashboard.php');
             }
         }else{
             $_SESSION['message'] = array(
@@ -45,11 +45,13 @@ if(isset($_POST['submit'])){
 <html lang="ja-jp">
 <head>
 	<title>Login</title>
+    <!--Icon in title-->
+    <link rel="shortcut icon" href="assets/images/log.ico">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/app_bkup.css">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -59,7 +61,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
 <div class="container-fluid">
-    <div class="offset-md-4 col-md-4">
+    <div class="offset-md-4 col-md-4 col-xs-12">
         <img class="img-fluid mx-auto d-block" id="login-thumb" src="assets/images/NEO_logo.png">
         <?php include_once 'flash_message.php';?>
         <div class="auth-box">
@@ -84,7 +86,7 @@ if(isset($_POST['submit'])){
             <div class="auth-footer">
                 <div class="auth-alert">
                     <p class="text-center"><a href="#">パスワードを忘れましたか?</a></p>
-                    <p class="text-center">アカウントがありませんか?　<a href="#">サインアップはこちら!</a></p>
+                    <p class="text-center">アカウントがありませんか?　<a href="signup.php">サインアップはこちら!</a></p>
                 </div>
             </div>
         </div>
