@@ -51,7 +51,7 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/app_bkup.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

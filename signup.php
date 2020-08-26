@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
 	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/app_bkup.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -67,14 +67,7 @@ if(isset($_POST['submit'])){
         function validate() {
             var check = 1;
             /*ユーザー名前は空いているかどうか*/
-            if(document.getElementById('username').value == ''){
-                document.getElementById('username_error').style.display = 'block';
-                document.getElementById('username_error').innerText = 'ユーザー名前は必要です';
-                document.getElementById('username').setAttribute('class','error-input');
-                check = 0;
-            }
-            /*ユーザー名前の長さは足りるかどうか*/
-            else if(document.getElementById('username').value.length < 5){
+            if(document.getElementById('username').value == '' || document.getElementById('username').value.length < 5){
                 document.getElementById('username_error').style.display = 'block';
                 document.getElementById('username_error').innerText = '最低5文字が必要です';
                 document.getElementById('username').setAttribute('class','error-input');
@@ -84,12 +77,22 @@ if(isset($_POST['submit'])){
                 document.getElementById('username').removeAttribute('class','error-input');
                 document.getElementById('username').setAttribute('class','correct-input');
             }
-            if(document.getElementById('pwd').value == ''){
+            if(document.getElementById('pwd').value == '' || document.getElementById('pwd').value.length < 6){
                 document.getElementById('pwd_error').style.display = 'block';
-                document.getElementById('pwd_error').innerText = 'パスワードは必要です';
+                document.getElementById('pwd_error').innerText = 'パスワードは最低5文字必要です。';
                 document.getElementById('pwd').setAttribute('class','error-input');
                 check = 0;
             }else{
+                document.getElementById('pwd_error').style.display = 'none';
+                document.getElementById('pwd').removeAttribute('class','error-input');
+                document.getElementById('pwd').setAttribute('class','correct-input');
+            }
+            if(document.getElementById('pwd_confirm').value == ''　|| document.getElementById('pwd_confirm').value != document.getElementById('pwd').value){
+                document.getElementById('pwd_confirm_error').style.display = 'block';
+                document.getElementById('pwd_confirm_error').innerText = 'パスワードを確認してください';
+                document.getElementById('pwd_confirm ').setAttribute('class','error-input');
+                check = 0;
+            } else{
                 document.getElementById('pwd_error').style.display = 'none';
                 document.getElementById('pwd').removeAttribute('class','error-input');
                 document.getElementById('pwd').setAttribute('class','correct-input');

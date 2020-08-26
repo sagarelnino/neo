@@ -46,7 +46,7 @@
     display: none;
 }
 .error-input{
-    border-color: #dc3545;
+    border: 1px solid #dc3545;
     display: block;
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
@@ -58,10 +58,10 @@
     background-color: #fff;
     background-clip: padding-box;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .correct-input{
-    border-color: #28a745;;
+    border: 1px solid #28a745;
     display: block;
     width: 100%;
     height: calc(1.5em + .75rem + 2px);
@@ -73,7 +73,7 @@
     background-color: #fff;
     background-clip: padding-box;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 /*
 .custom-btn:hover{

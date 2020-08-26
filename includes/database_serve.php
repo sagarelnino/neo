@@ -1,11 +1,10 @@
 <?php
 class Database{
-
     // specify your own database credentials
     private $host = "localhost"; //your host name
     private $db_name = "neo_test";   //your database name
-    private $username = "root"; //username of database server
-    private $password = "";     //password of database server
+    private $username = "root";        //username of database server
+    private $password = "";         //password of database server
     public $conn;
     // get the database connection
     public function __construct(){
