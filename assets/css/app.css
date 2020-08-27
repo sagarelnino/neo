@@ -104,6 +104,9 @@ border-color: #dc3545
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
     color: #E50055 !important;
 }
+.navbar-light .navbar-nav .nav-link.active{
+    color: #E50055 !important;
+}
 
 .dropdown .dropdown-menu a:hover
 {
@@ -116,3 +119,15 @@ border-color: #dc3545
     padding-left: 18px;
 }
 /*finish student menu Layout*/
+#lesson-search{
+    width: 170px;
+    color: #fff;
+    /*margin-top:10px ;*/
+}
+
+#lesson-search:hover{
+    transition: 0.5s ease-in-out;
+    background-color: #ec3345;
+    box-shadow: 0 0 10px white, 0 0 10px #E50055, 0 0 20px #E50055;
+    font-weight: bold;
+}

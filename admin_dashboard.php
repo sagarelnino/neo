@@ -32,21 +32,23 @@
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">プログラム</a>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">自分の</a>
+                    <a href="#" class="dropdown-item">現在</a>
                     <a href="#" class="dropdown-item">全て</a>
                 </div>
             </div>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">アカウント</a>
                 <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">学校</a>
+                    <a href="#" class="dropdown-item">先生</a>
+                    <a href="#" class="dropdown-item">生徒</a>
                     <a href="#" class="dropdown-item">プロファイル</a>
-                    <a href="#" class="dropdown-item">購入履歴</a>
                 </div>
             </div>
         </div>
         <div class="navbar-nav">
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">生徒</a>
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">管理者</a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <a href="#" class="dropdown-item">パスワードを変更</a>
                     <a href="logout.php" class="dropdown-item">ログアウト</a>

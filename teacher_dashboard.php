@@ -40,13 +40,13 @@
                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">アカウント</a>
                 <div class="dropdown-menu">
                     <a href="#" class="dropdown-item">プロファイル</a>
-                    <a href="#" class="dropdown-item">購入履歴</a>
+                    <a href="#" class="dropdown-item">給料履歴</a>
                 </div>
             </div>
         </div>
         <div class="navbar-nav">
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">生徒</a>
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">先生</a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <a href="#" class="dropdown-item">パスワードを変更</a>
                     <a href="logout.php" class="dropdown-item">ログアウト</a>
